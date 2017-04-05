@@ -82,9 +82,6 @@ def helloParam5(request):
     # p2 = request.POST.get('p2')
     if request.POST:
         paramObj = request.POST
-        print(paramObj)
         lists = paramObj.getlist(' name')
-        a= lists[0]
         print(lists[0])
-        print(lists[1])
     return HttpResponse("ok")
